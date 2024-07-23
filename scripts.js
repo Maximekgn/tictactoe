@@ -17,12 +17,12 @@ const checkWin = () => {
     winningCombinations.forEach((combination) => {
         const [a, b, c] = combination;
         if (
-            cells[a].innerHTML == currentPlayer &&
-            cells[b].innerHTML == currentPlayer &&
-            cells[c].innerHTML == currentPlayer
+            cells[a].innerHTML == cells[b].innerHTML &&
+            cells[a].innerHTML == cells[c].innerHTML &&
+            cells[a].innerHTML != " "
         ) {
-            alert("Winner is " + currentPlayer);
             winner = true;
+            alert("Winner is " + currentPlayer);
             location.reload();
         }
     });
@@ -30,7 +30,6 @@ const checkWin = () => {
 
 cells.forEach((cell) => {
     cell.addEventListener("click", () => {
-        checkWin();
         if ( ! winner)
         {
             if (cell.innerHTML == " ") {
