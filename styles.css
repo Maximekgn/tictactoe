@@ -1,3 +1,11 @@
+body{
+    height: 100dvh;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+}
+
 .board 
 {
     display: grid;
@@ -21,11 +29,4 @@
     transition: all 0.5s ease-in-out;
 }
 
-body
-{
-    height: 100dvh;
-    display: flex ;
-    justify-content: center;
-    align-items: center;
-    background-color: #333333;
-}
+
