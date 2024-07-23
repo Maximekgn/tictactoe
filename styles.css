@@ -4,16 +4,28 @@
     grid-template-columns: repeat(3, auto);
     width: 300px;
     margin: 50px auto;
+    perspective: 1000px;
 }
 .cell
 {
     width: 100px;
     height: 100px;
-    box-shadow: 0 0 0 1px #333333;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2), 0 0 20px rgba(0,0,0,0.2), 0 0 30px rgba(0,0,0,0.2);
     border: 1px solid #333333;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+body
+{
+    height: 100dvh;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
 }
