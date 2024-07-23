@@ -13,6 +13,7 @@ const winningCombinations = [
     [2, 4, 6],
 ];
 
+
 const checkWin = () => {
     winningCombinations.forEach((combination) => {
         const [a, b, c] = combination;
@@ -27,6 +28,7 @@ const checkWin = () => {
         }
     });
 };
+
 
 cells.forEach((cell) => {
     cell.addEventListener("click", () => {
